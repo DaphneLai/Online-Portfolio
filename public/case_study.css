@@ -1,0 +1,219 @@
+/* ------------------  For All Devices  ------------------*/
+
+body {
+  font-family: "Oxygen", sans-serif;
+  width: 95%;
+  margin: 10px auto;
+}
+
+header, nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  /* Header */
+  font-family: Oxygen;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+
+  /* Accent Grey */
+  color: #929292;
+}
+
+p {
+  font-family: Lora;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: left;
+
+  color: #000000;
+}
+
+a {
+  color: inherit;
+}
+
+/* ------------------  For Mobile (less than 768px)  ------------------*/
+.nav-item {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  list-style: none;
+  margin-left: 20px;
+}
+
+#logo {
+  max-height: 35px;
+}
+
+.hero {
+  display: block;
+  text-align: center;
+  margin: 0 5%;
+  margin-bottom: 30%;
+}
+
+.profile {
+  max-width: 200px;
+  border-radius: 100%;
+  margin-bottom: 30px;
+}
+
+.display-case {
+  display: block;
+}
+
+.case {
+  background-color: lavender;
+  margin: 30px auto;
+  padding: 20% 30px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.painting {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  border-radius: 3px;
+  align-self: center;
+}
+
+.animation {
+  display: block;
+  margin: auto;
+}
+
+.footer, h3 {
+  font-weight: normal;
+  font-family: Lora;
+  font-size: 15px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+/* ------------------  For Desktop (more than 768px)  ------------------*/
+@media only screen and (min-width: 768px) {
+  body {
+    font-family: "Oxygen", sans-serif;
+    margin: 100px auto;
+    width: 45%;
+    height: 100%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    /* Header */
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+
+    /* Accent Grey */
+    color: #929292;
+  }
+
+  p {
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+
+    color: #000000;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  /* PAGE HEADER */
+  .logo {
+    cursor: pointer;
+    width: 125px;
+    order: 1;
+  }
+
+  .nav-item {
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    list-style: none;
+    margin-right: 50px;
+    /* identical to box height */
+
+    color: #0d0d0d;
+  }
+
+  /* INTRODUCTION */
+  .introduction {
+    grid-column-start: third;
+    grid-column-end: fourth;
+    grid-row-start: two;
+  }
+
+  .profile {
+    margin-right: 30px;
+    width: 100%;
+    height: auto;
+    float: left;
+  }
+
+  .introduction-text {
+    max-width: 800px;
+  }
+
+  /* WORK SECTION */
+  .cards {
+    grid-column-start: first;
+    grid-column-end: fifth;
+    grid-row-start: three;
+  }
+
+  .case {
+    background-color: lavender;
+    margin: 30px auto;
+    padding: 100px 60px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .painting {
+    display: block;
+    max-width: 500px;
+    border-radius: 3px;
+    align-self: center;
+    margin: 30px auto;
+  }
+
+  #profile-about {
+    max-width: 300px;
+  }
+
+  #profile-home {
+    border-radius: 50%;
+    max-width: 200px;
+  }
+}
