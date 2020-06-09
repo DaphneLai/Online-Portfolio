@@ -1,12 +1,7 @@
 /* ------------------  For All Devices  ------------------*/
 
-body {
-  font-family: "Oxygen", sans-serif;
-  width: 95%;
-  margin: 10px auto;
-}
-
-header, nav{
+header,
+nav {
   display: flex;
   justify-content: space-between;
   margin: 0 10px;
@@ -19,20 +14,20 @@ h1 {
   font-family: Oxygen;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 36px;
   line-height: 23px;
-  text-align: left;
-
+  text-align: center;
+  margin-bottom: 80px;
   /* Accent Grey */
-  color: #929292;
+  color: #90d1d3;
 }
 
 p {
   font-family: Lora;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 24px;
+  line-height: 40px;
   letter-spacing: 0.02em;
-  text-align: left;
+  text-align: center;
 
   color: #000000;
 }
@@ -41,7 +36,19 @@ a {
   color: inherit;
 }
 
+.button, form{
+  padding: 30px 80px;
+  font-family: "Oxygen", sans-serif;
+  text-align: center;
+}
+
 /* ------------------  For Mobile (less than 768px)  ------------------*/
+body {
+  font-family: "Oxygen", sans-serif;
+  width: 95%;
+  margin: 10px auto;
+}
+
 .nav-item {
   font-weight: bold;
   font-size: 14px;
@@ -61,24 +68,26 @@ a {
   margin-bottom: 30%;
 }
 
+.display-case {
+  display: block;
+}
+
+/* Home Page */
 .profile {
   max-width: 200px;
   border-radius: 100%;
   margin-bottom: 30px;
 }
 
-.display-case {
-  display: block;
-}
-
 .case {
-  background-color: lavender;
+  background-color: rgb(238, 255, 250);
   margin: 30px auto;
   padding: 20% 30px;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
+/* Painting Page*/
 .painting {
   display: block;
   margin: 10px auto;
@@ -87,15 +96,17 @@ a {
   align-self: center;
 }
 
- /* ANIMATION SECTION */
- #animations , video{
+/* Animation Page */
+#animations,
+video {
   display: block;
   padding-bottom: 30px;
   border-radius: 5px;
   width: 100%;
 }
 
-.footer, h3 {
+.footer,
+h3 {
   font-weight: normal;
   font-family: Lora;
   font-size: 15px;
@@ -103,125 +114,36 @@ a {
   text-align: center;
 }
 
-
-
 /* ------------------  For Desktop (more than 768px)  ------------------*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   body {
-    font-family: "Oxygen", sans-serif;
-    margin: 100px auto;
-    width: 45%;
+    margin: 80px auto;
+    width: 50%;
     height: 100%;
   }
 
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  nav {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  h1 {
-    /* Header */
-    font-family: Oxygen;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 23px;
-
-    /* Accent Grey */
-    color: #929292;
-  }
-
-  p {
-    font-family: Lora;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: 0.02em;
-
-    color: #000000;
-  }
-
-  a {
-    color: inherit;
-  }
-
-  /* PAGE HEADER */
-  .logo {
-    cursor: pointer;
-    width: 125px;
-    order: 1;
-  }
-
-  .nav-item {
-    font-family: Oxygen;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    list-style: none;
-    margin-right: 50px;
-    /* identical to box height */
-
-    color: #0d0d0d;
-  }
-
-  /* INTRODUCTION */
-  .introduction {
-    grid-column-start: third;
-    grid-column-end: fourth;
-    grid-row-start: two;
-  }
-
-  .profile {
-    margin-right: 30px;
-    width: 100%;
-    height: auto;
-    float: left;
-  }
-
-  .introduction-text {
-    max-width: 800px;
-  }
-
-  /* WORK SECTION */
-  .cards {
-    grid-column-start: first;
-    grid-column-end: fifth;
-    grid-row-start: three;
+  .hero {
+    display: block;
+    max-width: 600px;
+    margin: 5% auto;
+    margin-bottom: 20%;
   }
 
   .case {
-    background-color: lavender;
+    background-color: #dffdfe;
     margin: 30px auto;
-    padding: 100px 60px;
+    padding: 10% 5%;
     border-radius: 5px;
     cursor: pointer;
   }
 
+  /* Painting Page*/
   .painting {
-    display: block;
-    max-width: 500px;
+    display: inline-block;
+    margin: 10px auto;
+    max-width: 50%;
     border-radius: 3px;
     align-self: center;
-    margin: 30px auto;
   }
 
-  #profile-about {
-    max-width: 300px;
-  }
-
-  #profile-home {
-    border-radius: 50%;
-    max-width: 200px;
-  }
-
-
- 
 }
