@@ -114,6 +114,12 @@ h3 {
   text-align: center;
 }
 
+.animation {
+  width: 100%;
+  height: 350px;
+
+}
+
 /* ------------------  For Desktop (more than 768px)  ------------------*/
 @media only screen and (min-width: 800px) {
   body {
@@ -146,4 +152,9 @@ h3 {
     align-self: center;
   }
 
+  .animation {
+    width: 960px;
+    height: 540px;
+  
+  }
 }
